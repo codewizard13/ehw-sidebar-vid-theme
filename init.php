@@ -8,7 +8,7 @@ define('SITE_TITLE', "ElijahStreams Rebuild 2025");
 $dummy_vid_title = "Johnny Enlow Unfiltered 138";
 
 // VERSION
-define('VERSION_NUM', '0.01.00');
+define('VERSION_NUM', '0.01.01');
 
 
 /* COLORS */

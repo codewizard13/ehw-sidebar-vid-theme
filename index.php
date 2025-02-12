@@ -28,6 +28,7 @@ if ($custom_query->have_posts()): while ($custom_query->have_posts()): $custom_q
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
+    <hr>
   
   </article>
 

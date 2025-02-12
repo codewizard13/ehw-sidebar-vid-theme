@@ -8,3 +8,4 @@
 </head>
 
 <body>
+  <h1>Version: <?php echo VERSION_NUM; ?></h1>

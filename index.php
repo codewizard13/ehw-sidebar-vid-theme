@@ -9,7 +9,7 @@
 <?php
 $custom_query = new WP_Query([
   'post_type' => ['videos', 'guests'],
-  'posts_per_page' => -1,
+  'posts_per_page' => 4, // -1 = unlimited
   'post_status' => 'publish',
   'orderby' => 'date',
   'order' => 'DESC',

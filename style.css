@@ -73,6 +73,10 @@ ______________________________________________________________________
   margin-bottom: 0 !important;
 }
 
+body {
+  background: orange !important;
+}
+
 /*
 
     [[[[[[[   PLUGIN IMPORTS   ]]]]]]]

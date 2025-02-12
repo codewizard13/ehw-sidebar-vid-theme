@@ -25,15 +25,3 @@ $theme_colors = [
 
 ];
 
-
-// __color_primary: teal;
-// __color_secondary: var(__clr_oxford_blue);
-// __color_accent_prim: var(__clr_robin_egg_blue);
-// __color_accent_sec: var(__clr_amethyst);
-// __color_text_base: var(__clr_onyx);
-
-
-
-// [
-//   'primary' => ($primary = )
-// ]

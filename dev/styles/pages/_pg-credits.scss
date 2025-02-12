@@ -1,0 +1,27 @@
+/*
+PAGE: Credits
+______________________________________________________________________
+   
+*/
+/* Credit items */
+
+.elsm-credits.e-con.e-flex > .e-con-inner {
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  max-height: 300px !important;
+  overflow: hidden;
+  align-items: flex-start;
+  font-size: .8rem;
+}
+
+.elsm-credit-item {
+  background: aliceblue;
+  margin-bottom: .2rem;
+  min-height: 4px;
+  flex: 1 1 calc(100%/4 - .4rem); /* Adjust the width to account for margins */
+  text-align: center;
+  width: calc(100% / 3) !important;
+  // border: solid 2px green;
+}

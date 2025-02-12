@@ -1,0 +1,53 @@
+/*
+PLUGIN:  Elementor
+______________________________________________________________________
+   
+*/
+
+
+/* Featured Guest Names List */
+
+.elsm-guest-list a.dce-acf-relational-post-link {
+  display: inline-block;
+}
+.elsm-guest-list a.dce-acf-relational-post-link:not(:last-child) .elementor-heading-title {
+  margin-right: 0.5em;
+}
+.elsm-guest-list a.dce-acf-relational-post-link:not(:last-child) .elementor-heading-title::after {
+  content: ", ";
+}
+
+
+
+/* TEXT EDITOR WIDGET: Remove extra space at bottom */
+.elementor-text-editor.elementor-clearfix > p:last-child {
+  margin-bottom:0;
+}
+
+
+/* POST GRID WIDGET: Set text background color */
+.elementor-element .eael-grid-post-holder {
+    /* background-color: #FFFFEA !important; */
+}
+
+
+
+/* LOOP TEMPLATE: Guest List Loop (Hz) */
+
+.elsm-guest-loop-hz .elsm--trunc {
+  max-width: 124ch !important;
+
+}
+
+.elsm-guest-loop-hz .elsm--trunc .elementor-text-editor {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+}
+
+
+/* FIX: Remove elementor-button default blue background  */
+[class*="elsm-"] .elementor-button {
+  background-color: unset;
+}

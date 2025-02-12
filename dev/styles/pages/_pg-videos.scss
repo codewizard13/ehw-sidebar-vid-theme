@@ -1,0 +1,48 @@
+/*
+PAGE: Videos
+______________________________________________________________________
+   
+*/
+
+
+/* ELSM Custom CSS - In Elementor Site Settings */
+
+
+/* ACF Relationship Featured Guests in Video Single Post - Universal */
+.elsm-comma-list {
+  list-style: none;
+}
+
+.elsm-comma-list * {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-evenly;
+}
+
+.elsm-comma-list li {
+  display: flex;
+  flex-direction: row !important;
+  margin-right: 1em !important;
+}
+
+
+@media (max-width: 767px) {
+  .elsm-comma-list {
+      display: flex !important;
+      align-items: flex-end !important;
+      
+      margin-left: .4rem;
+      height: fit-content;
+      position: relative;
+      top: 4px;
+  }
+
+  .elsm-comma-list * {
+      align-content: flex-end !important;
+  }
+
+
+
+}

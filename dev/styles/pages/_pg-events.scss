@@ -1,0 +1,60 @@
+/*
+PAGE: Events
+______________________________________________________________________
+   
+*/
+
+
+/* Price */
+.elsm-price-row {
+  color: #777;
+}
+.elsm-price {
+color: navy;
+font-weight: bold;
+}
+
+
+/* Agenda Item / Schedule repeater*/
+.elsm-agenda-item {
+  padding: 1rem;
+  width: auto;
+  background-color: #fff7f6;
+  border-left: 4px solid #faafa0;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start !important;
+  margin-bottom: 0.4rem;
+}
+
+.elsm-agenda-item .times {
+  font-weight: 700;
+  color: red;
+}
+
+.elsm-session-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ELSM - TABS on event page and others:
+    - ADD the class .elsm-tabs to the "TABS" widget for this to work
+*/
+
+@media (max-width: 767px) {
+  .elsm-tabs .e-n-tabs-heading {
+      flex-wrap: nowrap;
+      padding: 0 .4rem;
+      /* flex-basis: 50% !important; */
+
+  }
+
+  .elsm-tabs .e-n-tab-title {
+      max-width: 100% !important;
+      width: 100%;
+      flex: 1 1 50%;
+      padding: .8rem;
+  }
+}

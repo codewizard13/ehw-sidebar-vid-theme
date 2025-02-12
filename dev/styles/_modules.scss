@@ -1,0 +1,105 @@
+/*
+MODULE STYLES
+- Description: Modules or components are made of multiple elements and can
+  have quite complex styles. Tables are complex enough that they can also be
+  considered a module. Not every HTML with multiple parts are in the MODULE
+  section (e.g., <figure> goes in pix.css). Modules aren't specific to
+  any page, but are somewhat universal.
+______________________________________________________________________
+
+*/
+
+:root {
+  --col-super-light-peach: #FFF5E9;
+}
+
+/* SITE HEADER */
+
+/* Fixes items sitting on top of submenu during scroll
+Must add class to header or won't work */
+.elsm-header {
+  z-index: 9;
+}
+
+/* SITE FOOTER */
+
+/* ☎️ Styles donation phone links in footer */
+.elsm-footer-contact a {
+  color: var( --e-global-color-accent );
+}
+.elsm-footer-contact a:hover {
+  filter: brightness(3);
+  font-weight: bold;
+}
+.elsm-phone {
+  margin-top: 1rem;
+}
+
+
+/* SHORTCODES */
+
+
+
+/* FORMS */
+
+/* FIX: Remove excess whitespace at top of wpforms forms */
+div.wpforms-container-full {
+  margin: 0 !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-page-indicator {
+  margin: 0 !important;
+}
+
+
+/* PAGINATION */
+
+// .jet-filters-pagination__current .jet-filters-pagination__link{
+.jet-filters-pagination__current {
+  background: var(--e-global-color-accent);
+  margin: 0 !important;
+  padding: 0 !important;
+  padding: .2rem .8rem !important;
+  border-radius: 50%;
+  color: white;
+
+  height: 1.6rem;
+  width: 1.6rem;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jet-filters-pagination__current:hover {
+  /* color: var(--e-global-color-primary); */
+  /* border: solid 2px var(--e-global-color-primary); */
+  opacity: .7;
+}
+
+
+
+
+/* GLOBAL WIDGETS */
+
+
+.elsm-donate-blurb {
+  background: var(--col-super-light-peach);
+  /* filter: brightness(2.5); */
+  padding: .4rem .8rem;
+}
+
+.elsm-donate-blurb:first-line {
+  font-weight: 900;
+  color: red;
+}
+
+.elsm-donate-blurb .elsm-address {
+  color: var(--e-global-color-primary);
+  margin-top: 1rem;
+}
+.elsm-add-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  
+}

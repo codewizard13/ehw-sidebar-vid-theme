@@ -1,0 +1,31 @@
+/*
+
+BUTTONS: Buttons
+______________________________________________________________________
+
+*/
+
+/* MAKE ICON appear on right side instead of left on Icon List
+    - Created for Testimonails pg
+*/
+.elsm-btn--icon-right .elementor-icon-list-icon {
+  order: 1;
+  margin-left: 1rem;
+}
+
+/* USED on Event registration btn */
+
+.elsm-icon-list-btn-with-icon-rt .elementor-icon-list-text {
+  display: flex !important;
+  flex-direction: column;
+}
+.elsm-icon-list-btn-with-icon-rt .elementor-icon-list-text > * {
+  margin-bottom: 0 !important;
+  line-height: 1.6;
+
+}
+
+.elsm-icon-list-btn-with-icon-rt .elementor-icon-list-icon {
+  // position: absolute;
+  // right: .4rem;
+}

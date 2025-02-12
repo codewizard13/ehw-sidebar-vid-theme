@@ -1,0 +1,45 @@
+/*
+SIDEBARS:
+______________________________________________________________________
+
+*/
+
+
+/* SIDEBAR 
+Align all children left. Needed to override default elementor button [post title] text centering
+*/
+.elsm-text-align-left * {
+  text-align: left;
+}
+
+
+/* BUY-GOLD HTML widget in SIDBAR - Home Main */
+.elsm-ad-buy-gold {
+    // background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    background: var(--elsm-clr--grad-gold-1);
+    color: var(--e-global-color-secondary);
+    font-weight: bold
+}
+
+.elsm-ad-buy-gold:hover {
+    /*background: darken(.7);*/
+    opacity: .9;
+}
+
+.elsm-ad-buy-gold i {
+    font-size: 1.4rem;
+    margin-right: .4rem;
+}
+
+.elsm-buy-gold-link, .elsm-buy-gold-link:hover, .elsm-buy-gold-link:visited .elsm-buy-gold-link:active {
+    color: var(--e-global-color-secondary);
+}
+
+
+/* SEARCH RESULTS SIDEBAR */
+
+/* Makes sorting filter full-width */
+.jet-sorting-select {
+    width: 100%;
+    max-width: 100% !important;
+}

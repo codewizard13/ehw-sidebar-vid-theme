@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!-- BODY -->
- 
+
 <!-- SHOW POSTS -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -15,3 +15,4 @@
 <?php endif; ?>
 
 <!-- FOOTER -->
+ <?php get_footer(); ?>

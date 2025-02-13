@@ -12,12 +12,16 @@
 
   <header>
 
-    <?php 
-    wp_nav_menu([
+    <div class="container">
 
-      'theme_location' => 'top-menu',
+      <?php
+      wp_nav_menu([
 
-    ]);
-    ?>
+        'theme_location' => 'top-menu',
+        'menu_class' => 'top-bar',
+
+      ]);
+      ?>
+    </div>
 
   </header>

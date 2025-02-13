@@ -11,5 +11,13 @@
 
   <p>Posted by: <?php echo $fname; ?> <?php echo $lname; ?></p>
 
+  <?php
+  $tags = get_the_tags();
+  foreach ($tags as $tag): ?>
+
+    <a href="<?php echo get_tag_link($tag->term_id); ?>" class="badge bg-success"><?php echo $tag->name; ?></a>
+
+  <?php endforeach; ?>
+
 
 <?php endwhile; else: endif; ?>

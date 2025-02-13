@@ -4,8 +4,15 @@
 
   <?php get_template_part( 'includes/section', 'archive'); ?>
 
-  <?php previous_posts_link(); ?>
-  <?php next_posts_link(); ?>
+  <?php the_posts_pagination( [ 
+  
+    'mid_size' => 2,
+    'prev_text' => __( 'Previous Page', 'textdomain' ),
+    'next_text' => __( 'Next Page', 'textdomain' ),
+  
+  
+  ]);  
+  ?>
 
 </div>
 

@@ -9,8 +9,6 @@
 
     <?php get_template_part('includes/part', 'pagination-archive'); ?>
 
-
-
   </div>
 </section>
 

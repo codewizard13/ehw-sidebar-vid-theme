@@ -11,6 +11,8 @@
 
   <p>Posted by: <?php echo $fname; ?> <?php echo $lname; ?></p>
 
+  
+  
   <?php  // Add tags
   $tags = get_the_tags();
   foreach ($tags as $tag): ?>
@@ -18,6 +20,8 @@
     <a href="<?php echo get_tag_link($tag->term_id); ?>" class="badge bg-success"><?php echo $tag->name; ?></a>
 
   <?php endforeach; ?>
+
+
 
   <?php // Add categories
   $categories = get_the_category();
@@ -28,6 +32,11 @@
   </a>
 
   <?php endforeach; ?>
+
+
+
+  <?php // Comments
+  comments_template(); ?>
 
 
   <?php get_template_part('includes/part', 'pagination-single'); ?>

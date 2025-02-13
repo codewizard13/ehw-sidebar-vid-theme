@@ -1,9 +1,22 @@
-  <p>Greeting from footer.php</p>
-  
-  <?php wp_footer(); ?>
-  
-  <!-- END BODY -->
+<footer>
+  <div class="container">
 
-  </body>
+    <?php
+    wp_nav_menu([
+
+      'theme_location' => 'footer-menu',
+      'menu_class' => 'footer-bar',
+
+    ]);
+    ?>
+  </div>
+
+</footer>
+
+<?php wp_footer(); ?>
+
+<!-- END BODY -->
+
+</body>
 
 </html>

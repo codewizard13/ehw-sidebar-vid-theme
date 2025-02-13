@@ -11,7 +11,7 @@
 
   <p>Posted by: <?php echo $fname; ?> <?php echo $lname; ?></p>
 
-  <?php
+  <?php  // Add tags
   $tags = get_the_tags();
   foreach ($tags as $tag): ?>
 
@@ -19,5 +19,20 @@
 
   <?php endforeach; ?>
 
+  <?php // Add categories
+  $categories = get_the_category();
+  foreach($categories as $cat): ?>
+
+    <?php echo $cat->name; ?>
+
+  <?php endforeach; ?>
+
+
+  <footer class="pagination">
+
+    <?php // Single Pagination
+    echo previous_post_link() . '&nbsp;|&nbsp;' . next_posts_link(); ?>
+
+  </footer>
 
 <?php endwhile; else: endif; ?>

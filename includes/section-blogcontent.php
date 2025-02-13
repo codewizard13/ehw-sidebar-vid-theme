@@ -30,11 +30,8 @@
   <?php endforeach; ?>
 
 
-  <footer class="pagination">
+  <?php get_template_part('includes/part', 'pagination-single'); ?>
 
-    <?php // Single Pagination
-    echo previous_post_link() . '&nbsp;|&nbsp;' . next_posts_link(); ?>
-
-  </footer>
+  
 
 <?php endwhile; else: endif; ?>

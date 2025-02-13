@@ -23,7 +23,9 @@
   $categories = get_the_category();
   foreach($categories as $cat): ?>
 
+  <a href="<?php echo get_category_link($cat->term_id); ?>">
     <?php echo $cat->name; ?>
+  </a>
 
   <?php endforeach; ?>
 

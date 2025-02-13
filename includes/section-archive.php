@@ -13,6 +13,4 @@
 
 </div>
 
-
-
 <?php endwhile; else: endif; ?>

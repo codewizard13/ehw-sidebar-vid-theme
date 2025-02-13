@@ -38,7 +38,7 @@ function load_js()
 
 	wp_enqueue_script('jquery');
 
-	wp_register_script('bootstrap', get_template_directory_uri() . 'js/bootstrap.min.js', 'jquery', false, true); // last arg is whether to add to footer
+	wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true); // last arg is whether to add to footer
 	wp_enqueue_script('bootstrap');
 
 }

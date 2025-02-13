@@ -1,12 +1,16 @@
 <?php get_header(); ?>
 
-<div class="container">
+<section class="page-wrap">
 
-  <h1><?php the_title(); ?></h1>
 
-  <?php get_template_part( 'includes/section', 'content'); ?>
+  <div class="container">
 
-</div>
+    <h1><?php the_title(); ?></h1>
 
+    <?php get_template_part('includes/section', 'content'); ?>
+
+  </div>
+
+</section>
 
 <?php get_footer(); ?>

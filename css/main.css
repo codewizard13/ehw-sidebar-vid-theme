@@ -150,9 +150,18 @@ blockquote {
 
 
 
+/* PAGINATION */
 
+/* Single Pagination */
 
-
+.pagination {
+  background: aliceblue;
+  border: solid 2px red;
+  border-radius: 10px;
+  height: auto;
+  padding: .2rem 1rem;
+  margin-top: 1rem;
+}
 
 
 

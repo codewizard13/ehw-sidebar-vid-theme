@@ -65,5 +65,6 @@ register_nav_menus([
 
 
 // Custom Image Sizes
-add_image_size('blog-large', 800, 400, false);
+add_image_size('blog-wide', 1440, 400, true);
+add_image_size('blog-large', 800, 400, true);
 add_image_size('blog-small', 300, 200, true); // last arg is whether to hard-crop

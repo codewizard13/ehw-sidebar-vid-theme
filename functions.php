@@ -69,3 +69,22 @@ register_nav_menus([
 add_image_size('blog-wide', 1440, 400, true);
 add_image_size('blog-large', 800, 400, true);
 add_image_size('blog-small', 300, 200, true); // last arg is whether to hard-crop
+
+
+
+
+
+// Register Sidebars
+function my_sidebars() {
+
+	register_sidebar([
+
+		'name' => 'Page Sidebar',
+		'id' => 'page-sidebar',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
+
+	]);
+
+}
+add_action('widgets_init', 'my_sidebars');

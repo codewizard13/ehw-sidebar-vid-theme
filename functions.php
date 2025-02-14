@@ -60,3 +60,10 @@ register_nav_menus([
 	'footer-menu' => 'Footer Menu Location',
 
 ]);
+
+
+
+
+// Custom Image Sizes
+add_image_size('blog-large', 800, 400, false);
+add_image_size('blog-small', 300, 200, true); // last arg is whether to hard-crop

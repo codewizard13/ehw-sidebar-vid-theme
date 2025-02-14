@@ -167,7 +167,16 @@ blockquote {
 
 
 
+/* =====================================  */
 
+
+
+/* WIDGETS */
+
+
+.widget {
+  list-style: none;
+}
 
 
 

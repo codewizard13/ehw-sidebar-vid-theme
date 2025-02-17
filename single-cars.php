@@ -18,13 +18,14 @@
       <div class="col-lg-6">
     
         <?php get_template_part('includes/section', 'blogcontent'); ?>
+        <?php wp_link_pages(); ?>
         
       </div>
 
 
       <div class="col-lg-6">
 
-        
+
 
       </div>
 

@@ -12,7 +12,7 @@ $cats = [
 <form action="/" method="get">
 
 
-  <input type="hidden" name="cat" value="<?php echo $cats['recipes']; ?>">
+  <input type="hidden" name="cat" value="<?php echo $cats['blog']; ?>">
   
   <label for="search">Search</label>
   <input type="text" name="s" id="search" value="<?php the_search_query();?>" required>

@@ -125,3 +125,22 @@ function my_first_post_type() {
 
 }
 add_action('init', 'my_first_post_type');
+
+
+
+function my_first_taxonomy() {
+
+	$args = [
+		'labels' => [
+			'name' => 'Brands',
+			'singular_name' => 'Brand',
+		],
+		'public' => true,
+		'hierarchical' => true,
+
+	];
+
+	register_taxonomy('brands', ['cars'], $args); // param 2 is the array of post types to apply this tax to
+
+}
+add_action('init', 'my_first_taxonomy');

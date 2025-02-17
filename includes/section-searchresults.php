@@ -26,4 +26,8 @@
 
     </div>
 
-  <?php endwhile; else: endif; ?>
+<?php endwhile; else: ?>
+
+  There are no results for '<?php echo get_search_query(); ?>'.
+  
+<?php endif; ?>

@@ -28,10 +28,17 @@
 
         <ul>
 
-        <?php if(get_post_meta($post->ID, 'MrDig_Color', true)):?>
+        <?php 
+        $color = get_field('color');
+        $registration = get_field('registration');
+        
+        ?>
+        <?php if($color):?>
+          <li>Color: <?php echo $color ?></li>
+        <?php endif; ?>
 
-          <li>Color: <?php echo get_post_meta($post->ID, 'MrDig_Color', true); ?></li>
-
+        <?php if($registration):?>
+          <li>Registration: <?php echo $registration ?></li>
         <?php endif; ?>
 
 

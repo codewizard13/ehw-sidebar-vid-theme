@@ -23,11 +23,28 @@
       </div>
 
 
+      <!-- Right Col -->
       <div class="col-lg-6">
 
+        <ul>
+
+        <?php if(get_post_meta($post->ID, 'MrDig_Color', true)):?>
+
+          <li>Color: <?php echo get_post_meta($post->ID, 'MrDig_Color', true); ?></li>
+
+        <?php endif; ?>
 
 
-      </div>
+        <?php if(get_post_meta($post->ID, 'MrDig_Registration', true)):?>
+
+          <li>Registration: <?php echo get_post_meta($post->ID, 'MrDig_Registration', true); ?></li>
+
+        <?php endif; ?>
+
+        </ul>
+
+
+      </div><!-- END Right Col -->
 
     </div>
 

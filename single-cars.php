@@ -63,6 +63,21 @@
         </ul>
 
 
+
+        <!-- GALLERY -->
+        <?php
+        $gallery = get_field('gallery');
+        if ($gallery): ?>
+
+          <?php foreach ($gallery as $image): ?>
+
+            <img src="<?php echo $image['url']; ?>" class="img-fluid">
+
+          <?php endforeach; ?>
+
+        <?php endif; ?><!-- END GALLERY -->
+
+
       </div><!-- END Right Col -->
 
 

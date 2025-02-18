@@ -8,30 +8,34 @@
 
     <?php if (has_post_thumbnail()): ?>
 
-      <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>"
-        class="img-fluid mb-3 img-thumbnail">
+      <div class="gallery">
+        <a href="<?php the_post_thumbnail_url('blog-large'); ?>">
+          <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>"
+            class="img-fluid mb-3 img-thumbnail">
+        </a>
+      </div>
 
     <?php endif; ?>
 
 
-            <!-- GALLERY -->
-            <?php
-        $gallery = get_field('gallery');
-        if ($gallery): ?>
+    <!-- GALLERY -->
+    <?php
+    $gallery = get_field('gallery');
+    if ($gallery): ?>
 
 
-          <div class="gallery">
+      <div class="gallery mb-5">
 
-            <?php foreach ($gallery as $image): ?>
+        <?php foreach ($gallery as $image): ?>
 
-              <a href="<?php echo $image['sizes']['blog-large']; ?>">
-                <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid car-gallery-img">
-              </a>
-            <?php endforeach; ?>
+          <a href="<?php echo $image['sizes']['blog-large']; ?>">
+            <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid car-gallery-img">
+          </a>
+        <?php endforeach; ?>
 
-          </div><!-- END gallery wrapper -->
+      </div><!-- END gallery wrapper -->
 
-        <?php endif; ?><!-- END GALLERY -->
+    <?php endif; ?><!-- END GALLERY -->
 
 
     <div class="row">

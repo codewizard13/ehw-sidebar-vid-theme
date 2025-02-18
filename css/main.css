@@ -181,11 +181,25 @@ blockquote {
 
 
 
+/* =====================================  */
+
+
+/* CUSTOM POST TYPES */
+
+
+/* Cars */
 
 
 
 
+/* =====================================  */
 
+
+/* GALLERYS */
+
+.car-gallery-img {
+  margin: .2rem;
+}
 
 
 

@@ -3,12 +3,13 @@
 <div class="page-wrap">
   <div class="container">
 
-  <h1><?php the_title(); ?></h1>
+    <h1><?php the_title(); ?></h1>
 
 
     <?php if (has_post_thumbnail()): ?>
 
-      <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="<?php the_title();?>" class="img-fluid mb-3 img-thumbnail">
+      <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>"
+        class="img-fluid mb-3 img-thumbnail">
 
     <?php endif; ?>
 
@@ -16,10 +17,10 @@
     <div class="row">
 
       <div class="col-lg-6">
-    
+
         <?php get_template_part('includes/section', 'cars'); ?>
         <?php wp_link_pages(); ?>
-        
+
       </div>
 
 
@@ -28,30 +29,46 @@
 
         <ul>
 
-        <?php 
-        $color = get_field('color');
-        $registration = get_field('registration');
-        
-        ?>
-        <?php if($color):?>
-          <li>Color: <?php echo $color ?></li>
-        <?php endif; ?>
+          <?php
+          $color = get_field('color');
+          $registration = get_field('registration');
 
-        <?php if($registration):?>
-          <li>Registration: <?php echo $registration ?></li>
-        <?php endif; ?>
+          ?>
+          <?php if ($color): ?>
+            <li>Color: <?php echo $color ?></li>
+          <?php endif; ?>
+
+          <?php if ($registration): ?>
+            <li>Registration: <?php echo $registration ?></li>
+          <?php endif; ?>
+
+        </ul>
 
 
-        <?php if(get_post_meta($post->ID, 'MrDig_Registration', true)):?>
+        <!-- FEATURES -->
+        <h3>Features</h3>
 
-          <li>Registration: <?php echo get_post_meta($post->ID, 'MrDig_Registration', true); ?></li>
+        <ul>
+          <?php if (have_rows('features')): ?>
 
-        <?php endif; ?>
+            <?php while (have_rows('features')):
+              the_row();
+              $feature = get_sub_field('feature');
+              ?>
+              <li><?php echo $feature; ?></li>
+            <?php endwhile; ?>
+
+          <?php endif; ?>
 
         </ul>
 
 
       </div><!-- END Right Col -->
+
+
+
+
+
 
     </div>
 

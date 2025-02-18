@@ -115,7 +115,7 @@ function my_first_post_type() {
 		'hierarchical' => true,
 		'public' => true, // publically accessible by the user on backend and frontend
 		'has_archive' => true,
-		'supports' => ['title','editor','thumbnail'],
+		'supports' => ['title','editor','thumbnail','custom-fields'],
 		// 'rewrite' => ['slug','my-cars'],
 		'menu_icon' => 'dashicons-admin-generic',
 	];

@@ -47,6 +47,9 @@ function load_js()
 	wp_register_script('magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', 'jquery', false, true); // last arg is whether to add to footer
 	wp_enqueue_script('magnific-popup');
 
+	wp_register_script('custom', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true); // last arg is whether to add to footer
+	wp_enqueue_script('custom');
+
 }
 add_action('wp_enqueue_scripts', 'load_js');
 

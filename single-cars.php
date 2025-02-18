@@ -69,12 +69,17 @@
         $gallery = get_field('gallery');
         if ($gallery): ?>
 
-          <?php foreach ($gallery as $image): ?>
 
-            <a href="<?php echo $image['sizes']['blog-large']; ?>">
-              <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid car-gallery-img">
-            </a>
-          <?php endforeach; ?>
+          <div class="gallery">
+
+            <?php foreach ($gallery as $image): ?>
+
+              <a href="<?php echo $image['sizes']['blog-large']; ?>">
+                <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid car-gallery-img">
+              </a>
+            <?php endforeach; ?>
+
+          </div><!-- END gallery wrapper -->
 
         <?php endif; ?><!-- END GALLERY -->
 

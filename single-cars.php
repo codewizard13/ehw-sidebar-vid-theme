@@ -71,7 +71,7 @@
 
           <?php foreach ($gallery as $image): ?>
 
-            <img src="<?php echo $image['url']; ?>" class="img-fluid">
+            <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid">
 
           <?php endforeach; ?>
 

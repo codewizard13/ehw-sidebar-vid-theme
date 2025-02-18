@@ -72,7 +72,7 @@
           <?php foreach ($gallery as $image): ?>
 
             <a href="<?php echo $image['sizes']['blog-large']; ?>">
-              <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid">
+              <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid car-gallery-img">
             </a>
           <?php endforeach; ?>
 

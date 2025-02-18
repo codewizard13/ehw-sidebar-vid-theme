@@ -71,8 +71,9 @@
 
           <?php foreach ($gallery as $image): ?>
 
-            <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid">
-
+            <a href="<?php echo $image['sizes']['blog-large']; ?>">
+              <img src="<?php echo $image['sizes']['blog-small']; ?>" class="img-fluid">
+            </a>
           <?php endforeach; ?>
 
         <?php endif; ?><!-- END GALLERY -->

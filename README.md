@@ -37,9 +37,9 @@
 
 ### single-cars.php
 
-**_This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial_**
+**_This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial (Vid. 10)_**
 
-![This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial](/pix/screen-ES-Site-Rebuild-2025-001--02--single-cars.jpg)
+![This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial (Vid. 10)](/pix/screen-ES-Site-Rebuild-2025-001--03--single-cars.jpg)
 
 
 ## TAGS

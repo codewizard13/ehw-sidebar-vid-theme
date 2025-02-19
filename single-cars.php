@@ -87,7 +87,8 @@
         </ul>
 
 
-
+        <!-- ENQUIRY FORM -->
+        <?php echo do_shortcode('[wpforms id="27000"]'); ?>
 
 
 

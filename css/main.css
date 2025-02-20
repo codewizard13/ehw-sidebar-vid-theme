@@ -202,10 +202,30 @@ blockquote {
 }
 
 
+/* WPForms */
 
 
+.enquiry-form {
+  background: #e4e4e4;
+  padding: .2rem 1rem;
+  border-radius: .4rem !important;
+  max-width: 420px;
+}
 
+.enquiry-form input,
+.enquiry-form textarea {
+  border-radius: .4rem !important;
+}
 
+/* Form button */
+.enquiry-form .wpforms-submit {
+  background: teal !important;
+  width: 100%;
+  border-radius: .4rem !important
+}
+.enquiry-form .wpforms-submit:hover {
+  opacity: .7;
+}
 
 
 

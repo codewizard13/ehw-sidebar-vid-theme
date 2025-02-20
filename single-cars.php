@@ -88,7 +88,12 @@
 
 
         <!-- ENQUIRY FORM -->
-        <?php echo do_shortcode('[wpforms id="27000"]'); ?>
+        <div class="enquiry-form">
+
+          <?php echo do_shortcode('[wpforms id="27000"]'); ?>
+
+        </div><!-- END enquiry-form -->
+
 
 
 

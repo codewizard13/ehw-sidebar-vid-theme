@@ -164,6 +164,9 @@ add_action('init', 'my_first_taxonomy');
  * 
  * - Not sure why this works, but it does. Perplexity AI helped.
  * @param mixed $tags
+ * 
+ * Ref:
+ * - https://www.perplexity.ai/search/i-m-trying-to-include-an-acf-c-bDVrWF9dQamDSSUNDcJonA
  */
 function dynamic_acf_smart_tags($tags) {
 	$tags['acf_field'] = 'ACF Field';

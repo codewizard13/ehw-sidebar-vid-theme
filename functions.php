@@ -153,3 +153,30 @@ function my_first_taxonomy() {
 
 }
 add_action('init', 'my_first_taxonomy');
+
+
+
+// WPForms
+
+
+/**
+ * Summary of dynamic_acf_smart_tags:
+ * 
+ * - Not sure why this works, but it does. Perplexity AI helped.
+ * @param mixed $tags
+ */
+function dynamic_acf_smart_tags($tags) {
+	$tags['acf_field'] = 'ACF Field';
+	return $tags;
+}
+add_filter('wpforms_smart_tags', 'dynamic_acf_smart_tags');
+
+function process_dynamic_acf_smart_tags($content, $tag) {
+	if (strpos($tag, 'acf_field_') === 0) {
+			$field_name = str_replace('acf_field_', '', $tag);
+			$field_value = get_field($field_name, get_the_ID());
+			$content = str_replace('{acf_field_' . $field_name . '}', $field_value, $content);
+	}
+	return $content;
+}
+add_filter('wpforms_smart_tag_process', 'process_dynamic_acf_smart_tags', 10, 2);

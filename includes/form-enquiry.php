@@ -60,7 +60,7 @@
 
       event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
 
-      var endpoint = '<?php echo admin_url('admin-ajaxin.php'); ?>';
+      var endpoint = '<?php echo admin_url('admin-ajax.php'); ?>';
 
       var form = $('#enquiry').serialize();
 
@@ -97,7 +97,7 @@
           $('#enquiry').fadeOut(200)
 
           $('#error_message').text('ERROR: {' + err.statusText + '}').show();
-          
+
           $('#enquiry').trigger('reset')
 
           $('#enquiry').fadeIn(500)

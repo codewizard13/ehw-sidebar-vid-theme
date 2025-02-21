@@ -92,7 +92,16 @@
         },
 
         error: function (err) {
-          console.log(JSON.stringify(err,null, 2))
+          // console.log(JSON.stringify(err,null, 2))
+
+          $('#enquiry').fadeOut(200)
+
+          $('#error_message').text('ERROR: {' + err.statusText + '}').show();
+          
+          $('#enquiry').trigger('reset')
+
+          $('#enquiry').fadeIn(500)
+
         }
       })
 

@@ -37,9 +37,16 @@
 
 ### single-cars.php
 
+**_single-cars.php:  Form success_**
+![single-cars.php:  Form success](/pix/screen-ES-Site-Rebuild-2025-001--17--single-cars--ajax-resp-success.jpg)
+
+**_single-cars.php:  Form success_**
+![single-cars.php:  Form success](/pix/screen-ES-Site-Rebuild-2025-001--18--single-cars--ajax-resp-error.jpg)
+
 **_This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial. This version includes a WPForms enquiry form styled with CSS (Vid. 11)_**
 
 ![This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial. This version includes a WPForms enquiry form styled with CSS (Vid. 11)](/pix/screen-ES-Site-Rebuild-2025-001--15--single-cars.jpg)
+
 
 
 ## CODE

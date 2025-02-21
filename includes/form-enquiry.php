@@ -1,3 +1,6 @@
+<div id="success_message" class="alert alert-success" style="display:none"></div>
+
+
 <!-- NOTE:
 - We don't need any action or method params in the FORM element because we'll use jQuery to do the submit 
 - Bootstrap class group `form-group row` enables us to have columns inside with `col-...` classes
@@ -5,7 +8,7 @@
 -->
 <form id="enquiry" class="mt-4 mb-4" style="border: dashed red 1px;">
 
-  <h2>Send an equiry aobut <?php the_title(); ?></h2>
+  <h2>Send an enquiry about <?php the_title(); ?></h2>
 
   <input type="hidden" name="registration" value="<?php the_field('registration');?>">
 
@@ -78,6 +81,8 @@
 
           // alert(res.data)
           $('#enquiry').fadeOut(200)
+
+          $('#success_message').text('Thanks for your enquiry').show();
 
         },
 

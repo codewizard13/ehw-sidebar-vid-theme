@@ -3,7 +3,7 @@
 - Bootstrap class group `form-group row` enables us to have columns inside with `col-...` classes
 - Bootstrap class `form-control` makes form fields look more elegant that basic HTML
 -->
-<form class="mt-4 mb-4" style="border: dashed red 1px;">
+<form id="enquiry" class="mt-4 mb-4" style="border: dashed red 1px;">
 
   <h2>Send an equiry aobut <?php the_title(); ?></h2>
 
@@ -45,3 +45,11 @@
 
 
 </form>
+
+
+<script>
+  jQuery('#enquiry').submit( function() {
+    alert('HI')
+  });
+
+</script>

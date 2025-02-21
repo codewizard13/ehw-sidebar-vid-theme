@@ -195,6 +195,13 @@ add_action('wp_ajax_enquiry','enquiry_form'); // only works for logged-in users
 add_action('wp_ajax_nopriv_enquiry','enquiry_form'); // works for non-logged in users also 
 function enquiry_form() {
 
+	if ( !wp_verify_nonce( $_POST['nonce'], 'ajax-nonce' )) {
+
+		wp_send_json_error('Nonce is incorrect', 401);
+		die();
+
+	}
+
 	// wp_send_json_success('It works!');
 	// $data = json_encode($_POST);
 

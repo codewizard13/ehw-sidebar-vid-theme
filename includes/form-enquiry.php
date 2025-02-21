@@ -1,7 +1,6 @@
 <div id="success_message" class="alert alert-success" style="display:none"></div>
 <div id="error_message" class="alert alert-danger" style="display:none"></div>
 
-
 <!-- NOTE:
 - We don't need any action or method params in the FORM element because we'll use jQuery to do the submit 
 - Bootstrap class group `form-group row` enables us to have columns inside with `col-...` classes
@@ -69,6 +68,7 @@
       var formdata = new FormData;
 
       formdata.append('action', 'enquiry'); // tells wordpress what action name / function name to look for
+      formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>sdfsdjf')
       formdata.append('enquiry', form) // adds the data from the form
 
       $.ajax(endpoint, {
@@ -96,7 +96,7 @@
 
           $('#enquiry').fadeOut(200)
 
-          $('#error_message').text('ERROR: {' + err.statusText + '}').show();
+          $('#error_message').text('ERROR: {' + err.responseJSON.data + '}').show();
 
           $('#enquiry').trigger('reset')
 

@@ -207,7 +207,7 @@ function enquiry_form() {
 
 	// Create email headers
 	$headers[] = 'Content-Type: text/html; charset=UTF-8';
-	$headers[] = 'From: ' . $admin_email;
+	$headers[] = 'From: My Website <' . $admin_email . '>';
 	$headers[] = 'Reply-to: ' . $formdata['email'];
 
 	// Who are we sending the email to?

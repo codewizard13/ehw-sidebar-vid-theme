@@ -51,7 +51,9 @@
   (function ($) {
 
     jQuery('#enquiry').submit(function () {
-      alert('HI')
+
+      // event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
+
     });
 
   })(jQuery)

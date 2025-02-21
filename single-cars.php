@@ -46,6 +46,8 @@
         <?php get_template_part('includes/section', 'cars'); ?>
         <?php wp_link_pages(); ?>
 
+        <?php get_template_part('includes/form','enquiry'); ?>
+
       </div>
 
 

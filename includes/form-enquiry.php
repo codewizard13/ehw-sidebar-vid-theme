@@ -84,6 +84,8 @@
 
           $('#success_message').text('Thanks for your enquiry').show();
 
+          $('#enquiry').fadeIn(500)
+
         },
 
         error: function(err) {

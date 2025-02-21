@@ -195,6 +195,10 @@ add_action('wp_ajax_enquiry','enquiry_form'); // only works for logged-in users
 add_action('wp_ajax_nopriv_enquiry','enquiry_form'); // works for non-logged in users also 
 function enquiry_form() {
 
-	wp_send_json_success('It works!');
+	// wp_send_json_success('It works!');
+
+	$data = json_encode($_POST);
+
+	wp_send_json_success( $data );
 
 }

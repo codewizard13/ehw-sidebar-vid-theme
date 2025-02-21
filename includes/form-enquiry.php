@@ -1,4 +1,5 @@
 <div id="success_message" class="alert alert-success" style="display:none"></div>
+<div id="error_message" class="alert alert-danger" style="display:none"></div>
 
 
 <!-- NOTE:
@@ -10,7 +11,7 @@
 
   <h2>Send an enquiry about <?php the_title(); ?></h2>
 
-  <input type="hidden" name="registration" value="<?php the_field('registration');?>">
+  <input type="hidden" name="registration" value="<?php the_field('registration'); ?>">
 
   <div class="form-group row">
 
@@ -59,7 +60,7 @@
 
       event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
 
-      var endpoint = '<?php echo admin_url('admin-ajax.php');?>';
+      var endpoint = '<?php echo admin_url('admin-ajaxin.php'); ?>';
 
       var form = $('#enquiry').serialize();
 
@@ -67,7 +68,7 @@
 
       var formdata = new FormData;
 
-      formdata.append('action','enquiry'); // tells wordpress what action name / function name to look for
+      formdata.append('action', 'enquiry'); // tells wordpress what action name / function name to look for
       formdata.append('enquiry', form) // adds the data from the form
 
       $.ajax(endpoint, {
@@ -77,7 +78,7 @@
         processData: false, // turn off default actions by AJAX request; turn off turning into query string because we've already done that
         contentType: false, // what type of data sending; turn off because we're using FormData 
 
-        success: function(res) {
+        success: function (res) {
 
           // alert(res.data)
           $('#enquiry').fadeOut(200)
@@ -90,8 +91,8 @@
 
         },
 
-        error: function(err) {
-
+        error: function (err) {
+          console.log(JSON.stringify(err,null, 2))
         }
       })
 

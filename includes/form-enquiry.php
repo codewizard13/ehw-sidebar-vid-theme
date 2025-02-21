@@ -76,7 +76,8 @@
 
         success: function(res) {
 
-          alert(res.data)
+          // alert(res.data)
+          $('#enquiry').fadeOut(200)
 
         },
 

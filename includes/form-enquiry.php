@@ -5,6 +5,8 @@
 -->
 <form class="mt-4 mb-4" style="border: dashed red 1px;">
 
+  <h2>Send an equiry aobut <?php the_title(); ?></h2>
+
   <div class="form-group row">
 
     <div class="col-lg-6">

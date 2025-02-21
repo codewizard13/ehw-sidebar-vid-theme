@@ -40,6 +40,7 @@
 
     <div class="row">
 
+      <!-- Left Col -->
       <div class="col-lg-6">
 
         <?php get_template_part('includes/section', 'cars'); ?>
@@ -94,9 +95,6 @@
 
         </div><!-- END enquiry-form -->
 
-
-
-
       </div><!-- END Right Col -->
 
 
@@ -104,10 +102,10 @@
 
 
 
-    </div>
+    </div><!-- END row -->
 
 
-  </div>
-</div>
+  </div><!-- END container -->
+</div><!-- END page-wrap -->
 
 <?php get_footer(); ?>

@@ -84,6 +84,8 @@
 
           $('#success_message').text('Thanks for your enquiry').show();
 
+          $('#enquiry').trigger('reset')
+
           $('#enquiry').fadeIn(500)
 
         },

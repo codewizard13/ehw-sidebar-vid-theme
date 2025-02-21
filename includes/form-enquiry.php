@@ -52,7 +52,7 @@
 
     jQuery('#enquiry').submit(function () {
 
-      // event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
+      event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
 
     });
 

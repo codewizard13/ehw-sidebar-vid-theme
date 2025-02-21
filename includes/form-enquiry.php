@@ -54,6 +54,10 @@
 
       event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
 
+      var endpoint = '<?php echo admin_url('admin-ajax.php');?>';
+
+      alert(endpoint)
+
     });
 
   })(jQuery)

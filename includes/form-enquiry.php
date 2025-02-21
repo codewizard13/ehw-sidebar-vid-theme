@@ -7,6 +7,8 @@
 
   <h2>Send an equiry aobut <?php the_title(); ?></h2>
 
+  <input type="hidden" name="registration" value="<?php the_field('registration');?>">
+
   <div class="form-group row">
 
     <div class="col-lg-6">

@@ -68,7 +68,7 @@
       var formdata = new FormData;
 
       formdata.append('action', 'enquiry'); // tells wordpress what action name / function name to look for
-      formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>sdfsdjf')
+      formdata.append('nonce', '<?php echo wp_create_nonce('ajax-nonce');?>')
       formdata.append('enquiry', form) // adds the data from the form
 
       $.ajax(endpoint, {

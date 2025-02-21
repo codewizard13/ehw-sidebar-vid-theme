@@ -5,6 +5,8 @@
 
     <h1><?php the_title(); ?></h1>
 
+    <!-- NON-PLUGIN Enquiry Form -->
+    <?php get_template_part('includes/form', 'enquiry'); ?>
 
     <?php if (has_post_thumbnail()): ?>
 
@@ -46,7 +48,7 @@
         <?php get_template_part('includes/section', 'cars'); ?>
         <?php wp_link_pages(); ?>
 
-        <?php get_template_part('includes/form','enquiry'); ?>
+
 
       </div>
 

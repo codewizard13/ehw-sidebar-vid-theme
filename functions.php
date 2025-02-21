@@ -189,7 +189,7 @@ add_filter('wpforms_smart_tag_process', 'process_dynamic_acf_smart_tags', 10, 2)
 
 
 
-
+// Custom Hand-Coded, No-Plugin enquiry form
 
 add_action('wp_ajax_enquiry','enquiry_form'); // only works for logged-in users
 add_action('wp_ajax_nopriv_enquiry','enquiry_form'); // works for non-logged in users also 
@@ -197,8 +197,12 @@ function enquiry_form() {
 
 	// wp_send_json_success('It works!');
 
-	$data = json_encode($_POST);
+	// $data = json_encode($_POST);
 
-	wp_send_json_success( $data );
+	$formdata = [];
+
+	wp_parse_str($_POST['enquiry'], $formdata );
+
+	wp_send_json_success( $formdata['fname'] );
 
 }

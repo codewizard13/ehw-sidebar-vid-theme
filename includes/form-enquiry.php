@@ -50,13 +50,36 @@
 <script>
   (function ($) {
 
-    jQuery('#enquiry').submit(function () {
+    $('#enquiry').submit(function () {
 
       event.preventDefault(); // stops form from HTML submit so jQuery can handle the submit
 
       var endpoint = '<?php echo admin_url('admin-ajax.php');?>';
 
-      alert(endpoint)
+      var form = $('#enquiry').serialize();
+
+      // console.log(form) // result like: fname=Eric&lname=Hepperle&email=erichepperle.jobs%40gmail.com&phone=5034623553&enquiry=ff
+
+      var formdata = new FormData;
+
+      formdata.append('action','enquiry'); // tells wordpress what action name / function name to look for
+      formdata.append('enquiry', form) // adds the data from the form
+
+      $.ajax(endpoint, {
+
+        type: 'POST',
+        data: formdata,
+        processData: false, // turn off default actions by AJAX request; turn off turning into query string because we've already done that
+        contentType: false, // what type of data sending; turn off because we're using FormData 
+
+        success: function(res) {
+
+        },
+
+        error: function(err) {
+
+        }
+      })
 
     });
 

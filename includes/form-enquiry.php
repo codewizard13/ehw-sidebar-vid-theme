@@ -48,8 +48,13 @@
 
 
 <script>
-  jQuery('#enquiry').submit( function() {
-    alert('HI')
-  });
+  (function ($) {
+
+    jQuery('#enquiry').submit(function () {
+      alert('HI')
+    });
+
+  })(jQuery)
+
 
 </script>

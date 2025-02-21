@@ -74,6 +74,8 @@
 
         success: function(res) {
 
+          alert(res.data)
+
         },
 
         error: function(err) {

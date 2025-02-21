@@ -183,3 +183,18 @@ function process_dynamic_acf_smart_tags($content, $tag) {
 	return $content;
 }
 add_filter('wpforms_smart_tag_process', 'process_dynamic_acf_smart_tags', 10, 2);
+
+
+
+
+
+
+
+
+add_action('wp_ajax_enquiry','enquiry_form'); // only works for logged-in users
+add_action('wp_ajax_nopriv_enquiry','enquiry_form'); // works for non-logged in users also 
+function enquiry_form() {
+
+	wp_send_json_success('It works!');
+
+}

@@ -265,3 +265,17 @@ function register_navwalker(){
 	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+
+/*
+Doesn't work
+// Source: https://stackoverflow.com/questions/65546253/bootstrap-v5-wp-bootstrap-navwalker-dropdown-navbar-not-work#answer-67331001
+add_filter( 'nav_menu_link_attributes', 'bootstrap5_dropdown_fix' );
+function bootstrap5_dropdown_fix( $atts ) {
+     if ( array_key_exists( 'data-toggle', $atts ) ) {
+         unset( $atts['data-toggle'] );
+         $atts['data-bs-toggle'] = 'dropdown';
+     }
+     return $atts;
+}
+*/

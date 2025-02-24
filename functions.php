@@ -283,6 +283,7 @@ function bootstrap5_dropdown_fix( $atts ) {
 
 
 // bootstrap 5 wp_nav_menu walker
+// REF: https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 {
   private $current_item;

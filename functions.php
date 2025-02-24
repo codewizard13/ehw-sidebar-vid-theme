@@ -7,6 +7,9 @@
  */
 
 // Exit if accessed directly
+
+use PHPMailer\PHPMailer\PHPMailer;
+
 if (!defined('ABSPATH'))
 	exit;
 
@@ -279,3 +282,39 @@ function bootstrap5_dropdown_fix( $atts ) {
      return $atts;
 }
 */
+
+
+
+
+// PHP MAILER SMTP OVERRIDE
+// REF: https://github.com/PHPMailer/PHPMailer/
+//     https://www.youtube.com/watch?v=YtNraQxUTM0
+add_action('phpmailer_init','custom_mailer');
+function custom_mailer( PHPMailer $phpmailer ) {
+
+	
+	$from_email = 'noreply@elijahstreams.com';
+	$from_name = 'Eric Hepperle No-Reply';
+	$host = 'smtp.ionos.com';
+	$port = 587;
+	$smtp_secure = 'tls';
+	$username = 'eric_test@elijahstreams.com';
+	$password = '!*6_Ephe$ians-+:13';
+
+
+	$mail_body = '<p><strong>Hello!</strong> This is an email sent with PHPMAILER</p>';
+
+	// $phpmailer->SMTPDebug = 2;
+	$phpmailer->SetFrom($from_email, $from_name);
+	$phpmailer->Host = $host;
+	$phpmailer->Port = $port;
+	$phpmailer->SMTPAuth = true;
+	$phpmailer->SMTPSecure = $smtp_secure;
+	$phpmailer->Username = SMTP_LOGIN;
+	$phpmailer->Password = SMTP_PASSWORD;
+	$phpmailer->isSMTP();
+
+
+	// echo "<pre>".print_r($phpmailer,true)."</pre>";
+	// exit;
+}

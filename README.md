@@ -82,9 +82,53 @@ function process_dynamic_acf_smart_tags($content, $tag) {
 add_filter('wpforms_smart_tag_process', 'process_dynamic_acf_smart_tags', 10, 2);
 ```
 
+### functions.php snippet: PHPMailer - to send email without needed a plugin
+
+```php
+
+// PHP MAILER SMTP OVERRIDE
+// REF: https://github.com/PHPMailer/PHPMailer/
+//     https://www.youtube.com/watch?v=YtNraQxUTM0
+//
+// NOTE: SMTP_LOGIN, SMTP_PASSWORD are defined in wp-config.php
+//
+add_action('phpmailer_init','custom_mailer');
+function custom_mailer( PHPMailer $phpmailer ) {
+
+	
+	$from_email = 'noreply@yoursite.com';
+	$from_name = 'Your Site No-Reply';
+	$host = 'smtp.your-isp-server.com';
+	$port = 587;
+	$smtp_secure = 'tls';
+
+
+	// $mail_body = '<p><strong>Hello!</strong> This is an email sent with PHPMAILER</p>';
+
+	// SMTP / Server Settings
+
+	// $phpmailer->SMTPDebug = 2;
+	$phpmailer->SetFrom($from_email, $from_name);
+	$phpmailer->Host = $host;
+	$phpmailer->Port = $port;
+	$phpmailer->SMTPAuth = true;
+	$phpmailer->SMTPSecure = $smtp_secure;
+	$phpmailer->Username = SMTP_LOGIN;
+	$phpmailer->Password = SMTP_PASSWORD;
+	$phpmailer->isSMTP();
+
+	// $phpmailer->isHTML(true);
+	// $phpmailer->Subject = $phpmailer->Subject . ' - EXTRA SUBJECT PART!';
+	// $phpmailer->Body = $phpmailer->Body . $mail_body . '<br>This is a <b>SIGNATURE</b><br>';
+	// $phpmailer->AltBody = strip_tags($mail_body);
+
+}
+```
+
+
 ## TAGS
 
-`Tutwrk` `WordPress` `WordPress Themes` `Themes from Scratch` `Eric Hepperle` `Mr Digital` `WordPress Classic Theme` `WPForms` `Forms Plugin`
+`Tutwrk` `WordPress` `WordPress Themes` `Themes from Scratch` `Eric Hepperle` `Mr Digital` `WordPress Classic Theme` `WPForms` `Forms Plugin` `PHPMailer` `PHP Mail` `WordPress Email`
 
 
 ## PURPOSE

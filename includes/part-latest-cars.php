@@ -11,12 +11,26 @@ $query = new WP_Query($args);
 ?>
 
 
-<?php if( $query->have_posts() ):?>
+<?php if ($query->have_posts()): ?>
 
-  <?php while( $query->have_posts() ) : $query->the_post();?>
+  <?php while ($query->have_posts()):
+    $query->the_post(); ?>
 
-    <?php the_title();?>
 
-  <?php endwhile;?>
+    <article class="card">
 
-<?php endif;?>
+      <div class="card-body">
+
+
+        <h3><?php the_title(); ?></h3>
+
+        <?php the_field('registration'); ?>
+
+      </div><!-- END card-body -->
+
+    </article><!-- END card -->
+
+
+  <?php endwhile; ?>
+
+<?php endif; ?>

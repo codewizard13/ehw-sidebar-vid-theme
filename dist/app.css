@@ -2,3 +2,11 @@ body {
   background: #000;
   color: green;
 }
+
+header {
+  background: #000;
+  color: #f0f0f0;
+}
+header a {
+  color: green !important;
+}

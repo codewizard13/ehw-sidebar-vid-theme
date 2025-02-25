@@ -1,10 +1,11 @@
 $primary: #000;
 $secondary: green;
+$clr-light-gray: #f0f0f0;
 
 body {
   background: $primary;
   color: $secondary;
 }
 
-
+@import 'header';
 

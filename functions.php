@@ -334,6 +334,8 @@ function custom_mailer( PHPMailer $phpmailer ) {
 
 
 function my_shortcode() {
+
 	return 'hello';
+	
 }
 add_shortcode('latest_cars','my_shortcode');

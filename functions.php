@@ -22,7 +22,7 @@ function load_css()
 {
 
 	wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', [], false, 'all');
-	wp_enqueue_style('bootstrap');
+	// wp_enqueue_style('bootstrap');
 
 	wp_register_style('magnific-popup', get_template_directory_uri() . '/css/magnific-popup.css', [], false, 'all');
 	wp_enqueue_style('magnific-popup');
@@ -48,7 +48,7 @@ function load_js()
 	wp_enqueue_script('jquery');
 
 	wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true); // last arg is whether to add to footer
-	wp_enqueue_script('bootstrap');
+	// wp_enqueue_script('bootstrap');
 
 	wp_register_script('magnific-popup', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', 'jquery', false, true); // last arg is whether to add to footer
 	wp_enqueue_script('magnific-popup');

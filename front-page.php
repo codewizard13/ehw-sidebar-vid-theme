@@ -7,6 +7,7 @@
 
 
   <button class="btn btn-primary">Click Here</button>
+  <button class="btn btn-secondary">btn-secondary</button>
 
 
     <h1><?php the_title(); ?></h1>

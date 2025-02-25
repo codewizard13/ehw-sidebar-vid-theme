@@ -30,6 +30,9 @@ function load_css()
 	wp_register_style('main', get_template_directory_uri() . '/css/main.css', [], false, 'all');
 	wp_enqueue_style('main');
 
+	wp_register_style('laravel-mix-style', get_template_directory_uri() . '/dist/app.css', [], 1, 'all');
+	wp_enqueue_style('laravel-mix-style');
+
 	wp_register_style('elsms_styles_min', get_template_directory_uri() . '/style.min.css', [], false, 'all');
 	// wp_enqueue_style( 'elsms_styles_min' );
 
@@ -52,6 +55,9 @@ function load_js()
 
 	wp_register_script('custom', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true); // last arg is whether to add to footer
 	wp_enqueue_script('custom');
+
+	wp_register_script('laravel-mix', get_template_directory_uri() . '/dist/app.js', ['jquery'], 1, true); // last arg is whether to add to footer
+	wp_enqueue_script('laravel-mix');
 
 }
 add_action('wp_enqueue_scripts', 'load_js');

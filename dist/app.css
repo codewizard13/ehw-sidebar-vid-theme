@@ -3,10 +3,12 @@ body {
   color: green;
 }
 
+/* Named Colors */
+/* Color Roles */
 header {
-  background: #000;
+  background: teal;
   color: #f0f0f0;
 }
 header a {
-  color: green !important;
+  color: #0E1C36 !important;
 }

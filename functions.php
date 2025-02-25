@@ -304,6 +304,8 @@ function custom_mailer( PHPMailer $phpmailer ) {
 
 	$mail_body = '<p><strong>Hello!</strong> This is an email sent with PHPMAILER</p>';
 
+	// SMTP / Server Settings
+
 	// $phpmailer->SMTPDebug = 2;
 	$phpmailer->SetFrom($from_email, $from_name);
 	$phpmailer->Host = $host;
@@ -313,6 +315,10 @@ function custom_mailer( PHPMailer $phpmailer ) {
 	$phpmailer->Username = SMTP_LOGIN;
 	$phpmailer->Password = SMTP_PASSWORD;
 	$phpmailer->isSMTP();
+
+	$phpmailer->isHTML(true);
+	$phpmailer->Subject = $phpmailer->Subject . ' - EXTRA SUBJECT PART!';
+	$phpmailer->Body = $phpmailer->Body . '<br>This is a <b>SIGNATURE</b><br>';
 
 
 	// echo "<pre>".print_r($phpmailer,true)."</pre>";

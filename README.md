@@ -4,8 +4,8 @@
 | Project Type  | WordPress Theme                                      |
 | File Name     | README.md                                            |
 | Date Created  | 02/18/2025                                           |
-| Date Modified | 02/21/2025                                                   |
-| Version       | 00.01.02                                             |
+| Date Modified | 02/25/2025                                                   |
+| Version       | 00.01.03                                             |
 | Programmer    | **Eric Hepperle**                                    |
 
 ### GITHUB REPO

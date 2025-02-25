@@ -318,7 +318,8 @@ function custom_mailer( PHPMailer $phpmailer ) {
 
 	$phpmailer->isHTML(true);
 	$phpmailer->Subject = $phpmailer->Subject . ' - EXTRA SUBJECT PART!';
-	$phpmailer->Body = $phpmailer->Body . '<br>This is a <b>SIGNATURE</b><br>';
+	$phpmailer->Body = $phpmailer->Body . $mail_body . '<br>This is a <b>SIGNATURE</b><br>';
+	$phpmailer->AltBody = strip_tags($mail_body);
 
 
 	// echo "<pre>".print_r($phpmailer,true)."</pre>";

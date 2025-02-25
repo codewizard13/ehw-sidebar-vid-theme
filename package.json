@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Program Name  | **EHW Right-Sidebar WordPress Theme (from scratch)**",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "dev": "npm run development",
     "development": "mix",
     "watch": "mix watch",
@@ -11,7 +11,7 @@
     "hot": "mix watch --hot",
     "prod": "npm run production",
     "production": "mix --production"
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,5 +21,8 @@
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.85.1",
     "sass-loader": "^12.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }

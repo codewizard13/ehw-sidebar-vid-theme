@@ -1,3 +1,10 @@
+$primary: #000;
+$secondary: green;
+
 body {
-  background: #f0f0f0;
+  background: $primary;
+  color: $secondary;
 }
+
+
+

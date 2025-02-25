@@ -326,3 +326,14 @@ function custom_mailer( PHPMailer $phpmailer ) {
 	// $phpmailer->AltBody = strip_tags($mail_body);
 
 }
+
+
+
+
+// //////// SHORTCODES
+
+
+function my_shortcode() {
+	return 'hello';
+}
+add_shortcode('latest_cars','my_shortcode');

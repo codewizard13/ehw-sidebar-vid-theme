@@ -298,11 +298,9 @@ function custom_mailer( PHPMailer $phpmailer ) {
 	$host = 'smtp.ionos.com';
 	$port = 587;
 	$smtp_secure = 'tls';
-	$username = 'eric_test@elijahstreams.com';
-	$password = '!*6_Ephe$ians-+:13';
 
 
-	$mail_body = '<p><strong>Hello!</strong> This is an email sent with PHPMAILER</p>';
+	// $mail_body = '<p><strong>Hello!</strong> This is an email sent with PHPMAILER</p>';
 
 	// SMTP / Server Settings
 
@@ -316,12 +314,9 @@ function custom_mailer( PHPMailer $phpmailer ) {
 	$phpmailer->Password = SMTP_PASSWORD;
 	$phpmailer->isSMTP();
 
-	$phpmailer->isHTML(true);
-	$phpmailer->Subject = $phpmailer->Subject . ' - EXTRA SUBJECT PART!';
-	$phpmailer->Body = $phpmailer->Body . $mail_body . '<br>This is a <b>SIGNATURE</b><br>';
-	$phpmailer->AltBody = strip_tags($mail_body);
+	// $phpmailer->isHTML(true);
+	// $phpmailer->Subject = $phpmailer->Subject . ' - EXTRA SUBJECT PART!';
+	// $phpmailer->Body = $phpmailer->Body . $mail_body . '<br>This is a <b>SIGNATURE</b><br>';
+	// $phpmailer->AltBody = strip_tags($mail_body);
 
-
-	// echo "<pre>".print_r($phpmailer,true)."</pre>";
-	// exit;
 }

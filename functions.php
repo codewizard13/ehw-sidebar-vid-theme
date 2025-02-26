@@ -335,6 +335,12 @@ function custom_mailer( PHPMailer $phpmailer ) {
 
 function my_shortcode($atts, $content = null, $tag = '') {
 
+	// echo $tag; // the shortcode tag
+
+	// print_r($atts);
+
+	set_query_var('attributes', $atts);
+
 	ob_start();
 	get_template_part('includes/part-latest','cars');
 	return ob_get_clean();

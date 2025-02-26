@@ -1,5 +1,9 @@
 <?php
 
+$attributes = get_query_var('attributes');
+
+print_r($attributes);
+
 $args = [
 
   'post_type' => 'cars',

@@ -333,7 +333,7 @@ function custom_mailer( PHPMailer $phpmailer ) {
 // //////// SHORTCODES
 
 
-function my_shortcode() {
+function my_shortcode($atts, $content = null, $tag = '') {
 
 	ob_start();
 	get_template_part('includes/part-latest','cars');

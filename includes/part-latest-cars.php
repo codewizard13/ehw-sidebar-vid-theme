@@ -13,6 +13,15 @@ $args = [
   'meta_value' => $attributes['color'],
   'meta_compare' => 'LIKE',
   'posts_per_page' => -1, // no limit, no paging
+  'tax_query' => [
+    [
+      'taxonomy' => 'brands',
+      'field' => 'slug',
+      'terms' => [
+        $attributes['brand'],
+      ]
+    ]
+  ],
 
 ];
 
@@ -39,7 +48,7 @@ $query = new WP_Query($args);
         <h3><?php the_title(); ?></h3>
 
         <p><b>Registration:</b> <?php the_field('registration'); ?></p>
-        <p><b>Color:</b> <?php the_field('color');?></p>
+        <p><b>Color:</b> <?php the_field('color'); ?></p>
 
 
       </div><!-- END card-body -->

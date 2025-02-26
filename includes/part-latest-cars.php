@@ -21,6 +21,10 @@ $query = new WP_Query($args);
 
       <div class="card-body">
 
+        <a href="<?php the_post_thumbnail_url('blog-large'); ?>">
+          <img src="<?php the_post_thumbnail_url('blog-large'); ?>" alt="<?php the_title(); ?>"
+            class="img-fluid mb-3 img-thumbnail">
+        </a>
 
         <h3><?php the_title(); ?></h3>
 

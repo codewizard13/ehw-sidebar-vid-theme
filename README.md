@@ -45,9 +45,6 @@
 **_single-cars.php:  Form success (VID 14)_**
 ![single-cars.php:  Form success (VID 14)](/pix/screen-ES-Site-Rebuild-2025-103--09--single-cars--form-success.jpg)
 
-**_single-cars.php:  Form error_**
-![single-cars.php:  Form error](/pix/screen-ES-Site-Rebuild-2025-001--18--single-cars--ajax-resp-error.jpg)
-
 
 
 ## CODE

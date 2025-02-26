@@ -9,21 +9,7 @@ print_r($attributes['color']);
 $args = [
 
   'post_type' => 'cars',
-
-  // 'meta_key' => 'color', // ACF field
-  // 'meta_value' => $attributes['color'],
-  // 'meta_compare' => 'LIKE',
-
   'posts_per_page' => -1, // no limit, no paging
-  // 'tax_query' => [
-  //   [
-  //     'taxonomy' => 'brands',
-  //     'field' => 'slug',
-  //     'terms' => [
-  //       $attributes['brand'],
-  //     ]
-  //   ]
-  // ],
 
 ];
 

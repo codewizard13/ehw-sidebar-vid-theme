@@ -56,9 +56,11 @@ $query = new WP_Query($args);
 
         <h3><?php the_title(); ?></h3>
 
-        <p><b>Registration:</b> <?php the_field('registration'); ?></p>
-        <p><b>Color:</b> <?php the_field('color'); ?></p>
-
+        <ul style="list-style:none">
+          <li><b>Registration:</b> <?php the_field('registration'); ?></li>
+          <li><b>Color:</b> <?php the_field('color'); ?></li>
+          <li><b>Price:</b> <?php the_field('price'); ?></li>
+        </ul>
 
       </div><!-- END card-body -->
 

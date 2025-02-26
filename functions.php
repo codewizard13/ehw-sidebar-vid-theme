@@ -341,3 +341,13 @@ function my_shortcode() {
 	
 }
 add_shortcode('latest_cars','my_shortcode');
+
+
+function my_phone() {
+
+	$phone_num = '319 234-0909';
+
+	return "<a href='tel:$phone_num'>$phone_num</a>";
+
+}
+add_shortcode('phone','my_phone');

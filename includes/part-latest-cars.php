@@ -12,8 +12,7 @@ $args = [
   'meta_key' => 'color', // ACF field
   'meta_value' => $attributes['color'],
   'meta_compare' => 'LIKE',
-  // 'posts_per_page' => -1, // no limit, no paging
-  'posts_per_page' => 1,
+  'posts_per_page' => -1, // no limit, no paging
 
 ];
 
@@ -39,7 +38,9 @@ $query = new WP_Query($args);
 
         <h3><?php the_title(); ?></h3>
 
-        <?php the_field('registration'); ?>
+        <p><b>Registration:</b> <?php the_field('registration'); ?></p>
+        <p><b>Color:</b> <?php the_field('color');?></p>
+
 
       </div><!-- END card-body -->
 

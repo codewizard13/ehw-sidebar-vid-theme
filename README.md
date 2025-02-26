@@ -4,7 +4,7 @@
 | Project Type  | WordPress Theme                                      |
 | File Name     | README.md                                            |
 | Date Created  | 02/18/2025                                           |
-| Date Modified | 02/25/2025                                                   |
+| Date Modified | 02/26/2025                                                   |
 | Version       | 00.01.03                                             |
 | Programmer    | **Eric Hepperle**                                    |
 
@@ -42,15 +42,11 @@
 
 ![Laravel Mix works (VID 15)](/pix/screen-ES-Site-Rebuild-2025-103--01--single-cars--laravel-mix-works.jpg)
 
-**_single-cars.php:  Form success_**
-![single-cars.php:  Form success](/pix/screen-ES-Site-Rebuild-2025-001--17--single-cars--ajax-resp-success.jpg)
+**_single-cars.php:  Form success (VID 14)_**
+![single-cars.php:  Form success (VID 14)](/pix/screen-ES-Site-Rebuild-2025-103--09--single-cars--form-success.jpg)
 
 **_single-cars.php:  Form error_**
 ![single-cars.php:  Form error](/pix/screen-ES-Site-Rebuild-2025-001--18--single-cars--ajax-resp-error.jpg)
-
-**_This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial. This version includes a WPForms enquiry form styled with CSS (Vid. 11)_**
-
-![This is a single post template for the 'cars' custom post type created following Mr Digital's excellent tutorial. This version includes a WPForms enquiry form styled with CSS (Vid. 11)](/pix/screen-ES-Site-Rebuild-2025-001--15--single-cars.jpg)
 
 
 

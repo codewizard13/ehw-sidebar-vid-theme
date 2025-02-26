@@ -17,7 +17,7 @@ $query = new WP_Query($args);
     $query->the_post(); ?>
 
 
-    <article class="card">
+    <article class="card mb-3 mt-3">
 
       <div class="card-body">
 

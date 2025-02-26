@@ -16,8 +16,6 @@
 
     <?php get_search_form(); ?>
 
-    <?php get_template_part('includes/part-latest','cars');?>
-
 
   </div>
 

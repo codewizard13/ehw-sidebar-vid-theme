@@ -335,7 +335,7 @@ function custom_mailer( PHPMailer $phpmailer ) {
 
 function my_shortcode() {
 
-	return 'hello';
+	return get_template_part('includes/part-latest','cars');
 	
 }
 add_shortcode('latest_cars','my_shortcode');

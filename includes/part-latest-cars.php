@@ -3,8 +3,10 @@
 $args = [
 
   'post_type' => 'cars',
-  'meta_key' => 'color', // ACF field
-  'meta_value' => 'Red', // exact meta value string
+  // 'meta_key' => 'color', // ACF field
+  // 'meta_value' => 'Red', // exact meta value string
+  // 'posts_per_page' => -1, // no limit, no paging
+  'posts_per_page' => 1,
 
 ];
 

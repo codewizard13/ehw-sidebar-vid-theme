@@ -3,6 +3,8 @@
 $args = [
 
   'post_type' => 'cars',
+  'meta_key' => 'color', // ACF field
+  'meta_value' => 'Red', // exact meta value string
 
 ];
 
